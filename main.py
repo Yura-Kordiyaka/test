@@ -1,25 +1,16 @@
-# week 3 task 1
-def result(a, b):
-    x = 0
+#week3task2
+def result(a):
+    b = a[::-1]
     i = 0
-    suma = 0
-    if a > b:
-        x = b
-        i = b
-        while i <= a:
-            suma = suma + x
-            x = x + 1
+    d = len(a)
+    for j in b:
+        if a == b:
             i = i + 1
-    if b > a:
-        x = a
-        i = a
-        while i <= b:
-            suma = suma + x
-            x = x + 1
-            i = i + 1
-    return suma
+    if i == d:
+        print("this is palindrome")
+    else:
+        print("it is not a palindrome")
 
 
-c = int(input("input your data : "))
-x = int(input("input your data : "))
-print(result(x, c))
+c = str(input("input your data : "))
+result(c)
