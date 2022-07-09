@@ -1,16 +1,30 @@
-#week3task2
-def result(a):
-    b = a[::-1]
-    i = 0
-    d = len(a)
-    for j in b:
-        if a == b:
-            i = i + 1
-    if i == d:
-        print("this is palindrome")
-    else:
-        print("it is not a palindrome")
+#week3task3
+def remove_coma(a):
+    for j in a:
+        if j == ",":
+            a.remove(j)
 
 
-c = str(input("input your data : "))
-result(c)
+def add_element(a, c):
+    for j in range(0, len(c)):
+        a.append(c[j])
+
+
+t = open("test.txt", "r")
+w = open("write.txt", "w")
+f = t.read()
+d = []
+z = ()
+add_element(d, f)
+remove_coma(d)
+z = list(z)
+z = d
+z = tuple(z)
+print(d)
+print(z)
+for j in d:
+    w.write(j+" ")
+for j in z:
+    w.write(j+" ")
+
+
