@@ -1,8 +1,11 @@
-def result(my_list):
-    for j in range(0, len(my_list)):
-        if my_list[j] < 5:
-            print(my_list[j])
+def result(c, v):
+    my_list = a + b
+    print(my_list)
 
 
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-result(a)
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+result(a, b)
+a.extend(b)
+print(a)
+
