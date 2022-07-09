@@ -1,11 +1,8 @@
-def result(c, v):
-    my_list = a + b
-    print(my_list)
+def result(a):
+    b = sorted(a.values())
+    print(b)
+    print(b[-3:])
 
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-result(a, b)
-a.extend(b)
-print(a)
-
+my_dict = {'a': 500, 'b': 5874, 'c': 560, 'd': 400, 'e': 5874, 'f': 20}
+result(my_dict)
